@@ -1,0 +1,71 @@
+{
+  "name": "pepkio-kg-single-cell-long-read-rna-sequencing",
+  "version": "0.1.0",
+  "description": "Programmatic access to knowledge graph, benchmark Q&A, and explorer for single-cell long-read RNA sequencing via Pepkio REST API.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "pepkio-kg-single-cell-long-read-rna-sequencing": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run --exclude '**/integration.test.ts'",
+    "test:integration": "vitest run integration.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzheng/pepkio-kg-single-cell-long-read-rna-sequencing-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/suzheng/pepkio-kg-single-cell-long-read-rna-sequencing-js/issues"
+  },
+  "homepage": "https://www.pepkio.com/tools/kg-single-cell-long-read-rna-sequencing",
+  "keywords": [
+    "single-cell",
+    "long-read",
+    "rna-sequencing",
+    "sclr-seq",
+    "isoform-analysis",
+    "nanopore",
+    "pacbio",
+    "knowledge-graph",
+    "benchmark",
+    "pepkio",
+    "typescript",
+    "node",
+    "rest-api"
+  ],
+  "author": "Pepkio Team",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "commander": "^15.1.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "dotenv": "^18.0.10",
+    "tsup": "^9.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.0"
+  }
+}
