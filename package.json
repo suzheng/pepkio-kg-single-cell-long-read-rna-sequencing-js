@@ -1,7 +1,8 @@
 {
   "name": "pepkio-kg-single-cell-long-read-rna-sequencing",
   "version": "0.1.0",
-  "description": "Programmatic access to knowledge graph, benchmark Q&A, and explorer for single-cell long-read RNA sequencing via Pepkio REST API.",
+  "description": "TypeScript client and CLI for querying single-cell long-read RNA sequencing knowledge graphs, filtering benchmark Q&A, and running transcriptomic tools.",
+  "readme": "README_NPM.md",
   "type": "module",
   "engines": {
     "node": ">=18"
@@ -20,6 +21,7 @@
   "files": [
     "dist",
     "README.md",
+    "README_NPM.md",
     "LICENSE"
   ],
   "scripts": {
@@ -30,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/suzheng/pepkio-kg-single-cell-long-read-rna-sequencing-js.git"
+    "url": "git+https://github.com/pepkio/pepkio-kg-single-cell-long-read-rna-sequencing-js.git"
   },
   "bugs": {
-    "url": "https://github.com/suzheng/pepkio-kg-single-cell-long-read-rna-sequencing-js/issues"
+    "url": "https://github.com/pepkio/pepkio-kg-single-cell-long-read-rna-sequencing-js/issues"
   },
   "homepage": "https://www.pepkio.com/tools/kg-single-cell-long-read-rna-sequencing",
   "keywords": [
@@ -46,6 +48,7 @@
     "pacbio",
     "knowledge-graph",
     "benchmark",
+    "transcriptomics",
     "pepkio",
     "typescript",
     "node",
